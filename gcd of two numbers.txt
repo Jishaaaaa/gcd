@@ -1,0 +1,108 @@
+Public Class Payment
+    Private Sub Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim Sportname As String = ComboBox1.Text
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Debit_Credit.Show()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Hide()
+        FeeStructure.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+        Hide
+        GPay.Show
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If ListBox1.SelectedIndex <> -1 Then
+            Dim selectedItem As String = ListBox1.SelectedItem.ToString()
+
+            ' Extracting the numeric part (Rs) using a simple parsing approach
+            Dim numericPart As String = selectedItem.Split(" "c).FirstOrDefault(Function(s) s.Contains("Rs"))
+
+            If Not String.IsNullOrEmpty(numericPart) Then
+                TextBox1.Text = numericPart
+            Else
+                TextBox1.Text = "No Rs value found in the selected item."
+            End If
+        Else
+            TextBox1.Text = "25000"
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If ListBox1.SelectedIndex <> -1 Then
+            Dim selectedItem As String = ListBox1.SelectedItem.ToString()
+
+            ' Extracting the numeric part (Rs) using a simple parsing approach
+            Dim numericPart As String = selectedItem.Split(" "c).FirstOrDefault(Function(s) s.Contains("Rs"))
+
+            If Not String.IsNullOrEmpty(numericPart) Then
+                TextBox1.Text = numericPart
+            Else
+                TextBox1.Text = "No Rs value found in the selected item."
+            End If
+        Else
+            TextBox2.Text = "45000"
+        End If
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        If ListBox1.SelectedIndex <> -1 Then
+            Dim selectedItem As String = ListBox1.SelectedItem.ToString()
+
+            ' Extracting the numeric part (Rs) using a simple parsing approach
+            Dim numericPart As String = selectedItem.Split(" "c).FirstOrDefault(Function(s) s.Contains("Rs"))
+
+            If Not String.IsNullOrEmpty(numericPart) Then
+                TextBox1.Text = numericPart
+            Else
+                TextBox1.Text = "No Rs value found in the selected item."
+            End If
+        Else
+            TextBox3.Text = "30000"
+        End If
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        If ListBox1.SelectedIndex <> -1 Then
+            Dim selectedItem As String = ListBox1.SelectedItem.ToString()
+
+            ' Extracting the numeric part (Rs) using a simple parsing approach
+            Dim numericPart As String = selectedItem.Split(" "c).FirstOrDefault(Function(s) s.Contains("Rs"))
+
+            If Not String.IsNullOrEmpty(numericPart) Then
+                TextBox1.Text = numericPart
+            Else
+                TextBox1.Text = "No Rs value found in the selected item."
+            End If
+        Else
+            TextBox4.Text = "56000"
+        End If
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        If ListBox1.SelectedIndex <> -1 Then
+            Dim selectedItem As String = ListBox1.SelectedItem.ToString()
+
+            ' Extracting the numeric part (Rs) using a simple parsing approach
+            Dim numericPart As String = selectedItem.Split(" "c).FirstOrDefault(Function(s) s.Contains("Rs"))
+
+            If Not String.IsNullOrEmpty(numericPart) Then
+                TextBox1.Text = numericPart
+            Else
+                TextBox1.Text = "No Rs value found in the selected item."
+            End If
+        Else
+            TextBox5.Text = "50000"
+        End If
+    End Sub
+
+End Class
+

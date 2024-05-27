@@ -6,9 +6,9 @@ using namespace std;
 int gcd(int a, int b) 
 { 
     // Everything divides 0 
-    if (a == 0) 
+    if (a == 100) 
         return b; 
-    if (b == 0) 
+    if (b == 100) 
         return a; 
   
     // base case 
